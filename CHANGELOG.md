@@ -7,6 +7,10 @@ frontend TypeScript client, `nextjs-frontend`.
     The backend and the frontend are versioned together, that is, they have the same version number.
     When you update the backend, you should also update the frontend to the same version.
 
+## 0.0.7 <small>October 24, 2025</small> {id="0.0.7"}
+
+- Upgrade @hey-api/openapi-ts version to ^0.83.1
+
 ## 0.0.6 <small>September 1, 2025</small> {id="0.0.6"}
 
 - Upgrade Next.js version to 15.5.0
