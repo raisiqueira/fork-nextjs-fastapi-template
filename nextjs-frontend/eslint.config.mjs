@@ -5,7 +5,7 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [{
-  ignores: ["node_modules/**", ".next/**", "out/**", "build/**", "next-env.d.ts"]
+  ignores: ["node_modules/**", ".next/**", "out/**", "build/**", "next-env.d.ts", "app/openapi-client/**"]
 }, ...compat.config({
   extends: ["next/core-web-vitals", "next/typescript", "prettier"],
   rules: { "@typescript-eslint/no-empty-object-type": "off" },
