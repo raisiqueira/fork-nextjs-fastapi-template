@@ -2,7 +2,7 @@ import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { isServer }) => {
+  turbopack: (config, { isServer }) => {
     if (!isServer) {
       config.plugins.push(
         new ForkTsCheckerWebpackPlugin({
