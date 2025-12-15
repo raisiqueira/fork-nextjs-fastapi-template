@@ -10,7 +10,7 @@ const openapiFile = process.env.OPENAPI_OUTPUT_FILE;
 // Watch the specific file for changes
 chokidar.watch(openapiFile).on("change", (path) => {
   console.log(`File ${path} has been modified. Running generate-client...`);
-  exec("npm run generate-client", (error, stdout, stderr) => {
+  exec("pnpm run generate-client", (error, stdout, stderr) => {
     if (error) {
       console.error(`Error: ${error.message}`);
       return;
